@@ -1,5 +1,11 @@
 import React from 'react';
 import CNumber from './CNumber';
+import woodImage from './assets/images/tiles/forest.svg';
+import brickImage from './assets/images/tiles/hill.svg';
+import wheatImage from './assets/images/tiles/field.svg';
+import sheepImage from './assets/images/tiles/pasture.svg';
+import oreImage from './assets/images/tiles/mountain.svg';
+import desertImage from './assets/images/tiles/desert.svg';
 
 interface TileProps {
   resource: string;
@@ -10,12 +16,12 @@ interface TileProps {
 const CTile: React.FC<TileProps> = ({ resource, number, expansion }) => {
   const getResourceImage = (resource: string): string => {
     const resourceMap: { [key: string]: string } = {
-      Wood: './assets/images/tiles/forest.svg',
-      Brick: './assets/images/tiles/hill.svg',
-      Wheat: './assets/images/tiles/field.svg',
-      Sheep: './assets/images/tiles/pasture.svg',
-      Ore: './assets/images/tiles/mountain.svg',
-      Desert: './assets/images/tiles/desert.svg',
+      Wood: woodImage,
+      Brick: brickImage,
+      Wheat: wheatImage,
+      Sheep: sheepImage,
+      Ore: oreImage,
+      Desert: desertImage,
     };
     return resourceMap[resource] || './assets/images/tiles/desert.svg';
   };

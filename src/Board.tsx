@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { generateCatanBoard, generateExpansionBoard, BoardTile } from './BoardGenerator';
 import CTile from './CTile';
-import './assets/styles.css';
 
 interface BoardProps {
   expansion: boolean;
