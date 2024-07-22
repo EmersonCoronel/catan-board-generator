@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && npm run copy-assets",
+    "copy-assets": "cp -r src/assets dist/"
   },
   "repository": {
     "type": "git",
