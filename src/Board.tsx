@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { generateCatanBoard, generateExpansionBoard, BoardTile } from './generator/BoardGenerator';
+import { generateCatanBoard, generateExpansionBoard, BoardTile } from './BoardGenerator';
 import CTile from './CTile';
 
 interface BoardProps {
