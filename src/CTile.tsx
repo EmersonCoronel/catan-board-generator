@@ -10,14 +10,14 @@ interface TileProps {
 const CTile: React.FC<TileProps> = ({ resource, number, expansion }) => {
   const getResourceImage = (resource: string): string => {
     const resourceMap: { [key: string]: string } = {
-      Wood: './images/catan/tiles/forest.svg',
-      Brick: './images/catan/tiles/hill.svg',
-      Wheat: './images/catan/tiles/field.svg',
-      Sheep: './images/catan/tiles/pasture.svg',
-      Ore: './images/catan/tiles/mountain.svg',
-      Desert: './images/catan/tiles/desert.svg',
+      Wood: './assets/images/tiles/forest.svg',
+      Brick: './assets/images/tiles/hill.svg',
+      Wheat: './assets/images/tiles/field.svg',
+      Sheep: './assets/images/tiles/pasture.svg',
+      Ore: './assets/images/tiles/mountain.svg',
+      Desert: './assets/images/tiles/desert.svg',
     };
-    return resourceMap[resource] || './images/catan/tiles/desert.svg';
+    return resourceMap[resource] || './assets/images/tiles/desert.svg';
   };
 
   return (
