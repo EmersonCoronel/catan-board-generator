@@ -1,6 +1,6 @@
 {
   "name": "catan-board-generator",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A React component for generating Catan board layouts.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
