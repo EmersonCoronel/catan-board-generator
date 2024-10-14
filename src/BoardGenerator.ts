@@ -208,6 +208,3 @@ export function generateExpansionBoard() {
   // Return the completed board
   return board;
 }
-
-const board = generateExpansionBoard()
-console.log(board);
