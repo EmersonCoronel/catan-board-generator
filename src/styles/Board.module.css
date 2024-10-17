@@ -1,0 +1,24 @@
+.catanBoard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+  max-height: 900px;
+  margin: auto;
+  margin-top: 2vh;
+}
+
+.catanBoardRow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -3%;
+}
+@media (max-width: 768px) {
+  .catanBoardRow {
+    margin-left: -12%;
+    margin-right: -12%;
+  }
+}
