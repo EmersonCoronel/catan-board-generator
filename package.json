@@ -1,6 +1,6 @@
 {
   "name": "catan-board-generator",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A React component for generating Catan board layouts.",
   "type": "module",
   "main": "dist/index.cjs.js",
@@ -17,8 +17,8 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/index.esm.js", 
-      "require": "./dist/index.cjs.js" 
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
     }
   },
   "repository": {
