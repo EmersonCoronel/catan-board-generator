@@ -26,12 +26,15 @@ export default {
     typescript(), 
     postcss({
       modules: true, 
-      extract: true, 
+      inject: true, 
       minimize: true, 
     }),
     url({
       include: ["**/*.png", "**/*.svg"], 
       limit: 8192,
+      publicPath: "/_next/static/images",
+      emitFiles: true,
+      fileName: "[name][hash][extname]"
     }),
   ],
   external: ["react", "react-dom"],
