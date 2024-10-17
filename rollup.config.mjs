@@ -31,9 +31,7 @@ export default {
     }),
     url({
       include: ["**/*.png", "**/*.svg"],
-      limit: 0,
-      emitFiles: true,
-      fileName: "_next/static/images/[name][hash][extname]",
+      limit: Infinity,
     })
   ],
   external: ["react", "react-dom"],
