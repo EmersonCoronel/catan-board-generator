@@ -32,7 +32,6 @@ export default {
     url({
       include: ["**/*.png", "**/*.svg"],
       limit: 0,
-      publicPath: "/_next/static/images/",
       emitFiles: true,
       fileName: "_next/static/images/[name][hash][extname]",
     })
