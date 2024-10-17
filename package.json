@@ -11,6 +11,16 @@
     "watch": "rollup -c -w",
     "dev": "vite --config dev/vite.config.ts"
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js", 
+      "require": "./dist/index.cjs.js" 
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/EmersonCoronel/catan-board-generator.git"
