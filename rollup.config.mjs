@@ -30,12 +30,12 @@ export default {
       minimize: true, 
     }),
     url({
-      include: ["**/*.png", "**/*.svg"], 
-      limit: 8192,
-      publicPath: "/_next/static/images",
+      include: ["**/*.png", "**/*.svg"],
+      limit: 0,
+      publicPath: "/_next/static/images/",
       emitFiles: true,
-      fileName: "[name][hash][extname]"
-    }),
+      fileName: "_next/static/images/[name][hash][extname]",
+    })
   ],
   external: ["react", "react-dom"],
 };
